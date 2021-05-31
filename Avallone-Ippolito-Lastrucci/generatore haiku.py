@@ -1,4 +1,5 @@
-#Per utilizzare il codice è necessario che tutti gli elementi scaricati siano presenti nei Downloads all'interno di una cartella soprannominata "Haiku".
+#Lavoro a cura di Avallone Enrico, Ippolito Gabriele, Lastrucci Davide
+#Per utilizzare il codice è necessario che tutti gli elementi scaricati siano presenti nella cartella Downloads".
 #("cinq1.txt"; "cinq2.txt"; "sette.txt"; "sfondo.jpg")
 
 
@@ -16,15 +17,15 @@ from tkinter.filedialog import asksaveasfile
 
 #estrazione versi dai file .txt
 
-a = open("Downloads\Haiku\cinq1.txt")
+a = open("Downloads\cinq1.txt")
 line = csv.reader(a)
 v1 = list(line)
 
-b = open("Downloads\Haiku\sette.txt")
+b = open("Downloads\sette.txt")
 line = csv.reader(b)
 v2 = list(line)
 
-c = open("Downloads\Haiku\cinq2.txt")
+c = open("Downloads\cinq2.txt")
 line = csv.reader(c)
 v3 = list(line)
 
@@ -36,7 +37,7 @@ riquadro = tk.Canvas(root, width = 600, height = 300, bg="dark sea green")
 root.title("UN HAIKU AL GIORNO")
 riquadro.pack()
 
-load = Image.open("Downloads\Haiku\sfondo.jpg")
+load = Image.open("Downloads\sfondo.jpg")
 render = ImageTk.PhotoImage(load)
 img = Label(image=render)
 img.image = render
